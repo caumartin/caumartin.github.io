@@ -48,6 +48,7 @@ p {
 }
 
 ul {
+    display: none;
     margin-left: 240px;
 }
 

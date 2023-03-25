@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+  
+    <main>
+        <h1>FORMULARIO</h1>
+
+        <!-- Crearse su propia cuenta en formspree.io para que les 
+        llegue el correo a ustedes,  -->
+        <form action="https://formspree.io/f/mzbwblkq" method="POST">
+
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="nombre">
+
+            <br><br>
+
+            <!--Hace el mismo trabajo de forma sencilla -->
+            <label>Apellido
+                <input type="text" name="apellido" required>
+            </label>
+
+            <br>
+            <br>
+            <label for="">FN:
+                <input type="date">
+            </label>
+
+            <label>Edad
+                <input type="number" name="edad">
+            </label>
+           <br><br>
+
+           
+            <label>Género
+                <select name="genero" id="">Opciones
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+            </label>
+
+            <br><br>
+            <label>Comentario:
+                <textarea name="comentario" id="" cols="30" rows="10">Escriba su comentario
+
+                </textarea>
+            </label>
+
+            <br><br>
+
+            <label>Clave:
+                <input type="password">
+            </label>
+
+            <br><br>
+
+            <label>Categoria que más te gusta:
+                <input type="radio"  value="cuento" name="cuento">Cuento
+                <input type="radio" value="historieta" name="cuento">Historieta
+                <input type="radio" value="novela" name="cuento">Novela
+
+            </label>
+
+            <br><br>
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label>Teléfono
+                    <input type="number">
+                </label>
+
+            </fieldset>
+            <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+
+        </form>
+
+    </main>
+
+    <a href="index.html">Regresar</a>
+
+
+</body>
+</html>

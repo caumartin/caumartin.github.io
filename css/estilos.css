@@ -78,15 +78,22 @@ header .textos-header{
 }
 
 /* Sobre Nosotros */
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
 .contenedor-sobre-nosotros{
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .imagen-nosotros{
     width: 48%;
     height: 100%;
-    margin-right: 50px;
+
+}
+.contenido-textos{
+margin-left: 30px;
 }
 .nosotros .contenido-textos{
     width: 48%;
@@ -176,7 +183,7 @@ margin-bottom: 15px;
 }
 
 .cards .card > .contenido-texto-card{
-    width: 60%;
+    width: 70%;
     color: #fff;
 }
 
@@ -222,4 +229,105 @@ footer{
     font-size: 24px;
     margin: 20px 0 0 0;
     color: #9e9797;
+}
+
+@media screen and (max-width: 900px){
+    header{
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+        margin-left: 0;
+    }
+    .imagen-nosotros{
+        width: 90%;
+        height: 90%;
+    }
+
+    /* Galeria */
+    .imagen-sponsors{
+        width: 45%;
+    }
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards .card{
+        width: 90%;
+    }
+    .cards .card:first-child{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    nav{
+        text-align: center;
+    }
+    nav > a{
+        margin-right: 5px;
+    }
+    .textos-header h1{
+        font-size: 35px;
+    }
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /*Sobre Nosotros*/
+    .imagen-nosotros{
+        margin-bottom: 30px;
+        width: 95%;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria Sponsors */
+    .imagen-sponsors{
+        width: 95%;
+    }
+
+    /* Que dicen */
+    .cards .card{
+       height: 450px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       /*padding: 0;*/
+       /*font-size: 10;*/
+    }
+    .cards .card img{
+        width: 90%;
+        height: 120px;
+        width: 120px;
+    }
+
+    /* Footer */
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content-foo h4{
+        border: none;
+    }
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+    .titulo-final{
+        font-size: 20px;
+    }
 }

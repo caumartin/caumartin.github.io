@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif !important;
 
 }
 
@@ -17,16 +17,17 @@ body {
     overflow: hidden;
 }
 
-.contenedor-grid{
+.contenedor-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
     margin: 5% 5% 5% 5%;
 }
 
-.imagen-encontradas > img{
-    width: 100%;
-    height: auto;
+.imagen-encontradas>img {
+    width: 98%;
+    height: 350px;
+    object-fit: cover;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -34,27 +35,27 @@ body {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-.texto-encontradas{
+.texto-encontradas {
     text-align: center;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
 }
 
-.consejos-grid{
+.consejos-grid {
     display: grid;
     grid-template-columns: auto;
     grid-gap: 25px;
     margin: 5% 5% 5% 5%;
 }
 
-.consejos-item1{
+.consejos-item1 {
     font-size: x-large;
     color: blueviolet;
     background-color: lightgoldenrodyellow;
     padding: 10px 10px 10px 10px;
 }
 
-.titulo{
+.titulo {
     color: #642a73;
     font-size: 30px;
     text-align: center;
@@ -400,4 +401,8 @@ footer {
     .titulo-final {
         font-size: 20px;
     }
+}
+
+iframe {
+    margin-left: 20%;
 }
